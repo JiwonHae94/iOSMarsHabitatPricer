@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CA95A5B27611C9D00E87979 /* iOSMarsHabitatPricerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA95A5A27611C9D00E87979 /* iOSMarsHabitatPricerApp.swift */; };
+		7CA95A5D27611C9D00E87979 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA95A5C27611C9D00E87979 /* HomeView.swift */; };
+		7CA95A5F27611C9F00E87979 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA95A5E27611C9F00E87979 /* Assets.xcassets */; };
+		7CA95A6227611C9F00E87979 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA95A6127611C9F00E87979 /* Preview Assets.xcassets */; };
+		7CA95A6C27611C9F00E87979 /* iOSMarsHabitatPricerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA95A6B27611C9F00E87979 /* iOSMarsHabitatPricerTests.swift */; };
+		7CA95A7627611C9F00E87979 /* iOSMarsHabitatPricerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA95A7527611C9F00E87979 /* iOSMarsHabitatPricerUITests.swift */; };
+		7CA95A7827611C9F00E87979 /* iOSMarsHabitatPricerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA95A7727611C9F00E87979 /* iOSMarsHabitatPricerUITestsLaunchTests.swift */; };
+		7CA95A8927611D0300E87979 /* MarsHabitatPricer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7CA95A8827611D0300E87979 /* MarsHabitatPricer.mlmodel */; };
+		7CA95A8C27611D7700E87979 /* MarsHabitorPricerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA95A8B27611D7700E87979 /* MarsHabitorPricerModel.swift */; };
+		7CA95A90276120D100E87979 /* MLViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA95A8F276120D100E87979 /* MLViewModel.swift */; };
+		7CA95A92276121C400E87979 /* NumberPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA95A91276121C400E87979 /* NumberPicker.swift */; };
+		7CA95A942761221500E87979 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA95A932761221500E87979 /* PickerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CA95A6827611C9F00E87979 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CA95A4F27611C9D00E87979 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CA95A5627611C9D00E87979;
+			remoteInfo = iOSMarsHabitatPricer;
+		};
+		7CA95A7227611C9F00E87979 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CA95A4F27611C9D00E87979 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CA95A5627611C9D00E87979;
+			remoteInfo = iOSMarsHabitatPricer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7CA95A5727611C9D00E87979 /* iOSMarsHabitatPricer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMarsHabitatPricer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CA95A5A27611C9D00E87979 /* iOSMarsHabitatPricerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSMarsHabitatPricerApp.swift; sourceTree = "<group>"; };
+		7CA95A5C27611C9D00E87979 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7CA95A5E27611C9F00E87979 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CA95A6127611C9F00E87979 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7CA95A6727611C9F00E87979 /* iOSMarsHabitatPricerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSMarsHabitatPricerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CA95A6B27611C9F00E87979 /* iOSMarsHabitatPricerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSMarsHabitatPricerTests.swift; sourceTree = "<group>"; };
+		7CA95A7127611C9F00E87979 /* iOSMarsHabitatPricerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSMarsHabitatPricerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CA95A7527611C9F00E87979 /* iOSMarsHabitatPricerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSMarsHabitatPricerUITests.swift; sourceTree = "<group>"; };
+		7CA95A7727611C9F00E87979 /* iOSMarsHabitatPricerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSMarsHabitatPricerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7CA95A8827611D0300E87979 /* MarsHabitatPricer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MarsHabitatPricer.mlmodel; sourceTree = "<group>"; };
+		7CA95A8B27611D7700E87979 /* MarsHabitorPricerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsHabitorPricerModel.swift; sourceTree = "<group>"; };
+		7CA95A8F276120D100E87979 /* MLViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLViewModel.swift; sourceTree = "<group>"; };
+		7CA95A91276121C400E87979 /* NumberPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPicker.swift; sourceTree = "<group>"; };
+		7CA95A932761221500E87979 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CA95A5427611C9D00E87979 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CA95A6427611C9F00E87979 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CA95A6E27611C9F00E87979 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CA95A4E27611C9D00E87979 = {
+			isa = PBXGroup;
+			children = (
+				7CA95A5927611C9D00E87979 /* iOSMarsHabitatPricer */,
+				7CA95A6A27611C9F00E87979 /* iOSMarsHabitatPricerTests */,
+				7CA95A7427611C9F00E87979 /* iOSMarsHabitatPricerUITests */,
+				7CA95A5827611C9D00E87979 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CA95A5827611C9D00E87979 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CA95A5727611C9D00E87979 /* iOSMarsHabitatPricer.app */,
+				7CA95A6727611C9F00E87979 /* iOSMarsHabitatPricerTests.xctest */,
+				7CA95A7127611C9F00E87979 /* iOSMarsHabitatPricerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CA95A5927611C9D00E87979 /* iOSMarsHabitatPricer */ = {
+			isa = PBXGroup;
+			children = (
+				7CA95A5A27611C9D00E87979 /* iOSMarsHabitatPricerApp.swift */,
+				7CA95A8A27611D6000E87979 /* ML */,
+				7CA95A8D276120B400E87979 /* Views */,
+				7CA95A8E276120BE00E87979 /* ViewModels */,
+				7CA95A8727611CD500E87979 /* Resources */,
+				7CA95A5E27611C9F00E87979 /* Assets.xcassets */,
+				7CA95A6027611C9F00E87979 /* Preview Content */,
+			);
+			path = iOSMarsHabitatPricer;
+			sourceTree = "<group>";
+		};
+		7CA95A6027611C9F00E87979 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7CA95A6127611C9F00E87979 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7CA95A6A27611C9F00E87979 /* iOSMarsHabitatPricerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CA95A6B27611C9F00E87979 /* iOSMarsHabitatPricerTests.swift */,
+			);
+			path = iOSMarsHabitatPricerTests;
+			sourceTree = "<group>";
+		};
+		7CA95A7427611C9F00E87979 /* iOSMarsHabitatPricerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7CA95A7527611C9F00E87979 /* iOSMarsHabitatPricerUITests.swift */,
+				7CA95A7727611C9F00E87979 /* iOSMarsHabitatPricerUITestsLaunchTests.swift */,
+			);
+			path = iOSMarsHabitatPricerUITests;
+			sourceTree = "<group>";
+		};
+		7CA95A8727611CD500E87979 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7CA95A8827611D0300E87979 /* MarsHabitatPricer.mlmodel */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7CA95A8A27611D6000E87979 /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				7CA95A8B27611D7700E87979 /* MarsHabitorPricerModel.swift */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
+		7CA95A8D276120B400E87979 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7CA95A5C27611C9D00E87979 /* HomeView.swift */,
+				7CA95A91276121C400E87979 /* NumberPicker.swift */,
+				7CA95A932761221500E87979 /* PickerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7CA95A8E276120BE00E87979 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7CA95A8F276120D100E87979 /* MLViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CA95A5627611C9D00E87979 /* iOSMarsHabitatPricer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CA95A7B27611C9F00E87979 /* Build configuration list for PBXNativeTarget "iOSMarsHabitatPricer" */;
+			buildPhases = (
+				7CA95A5327611C9D00E87979 /* Sources */,
+				7CA95A5427611C9D00E87979 /* Frameworks */,
+				7CA95A5527611C9D00E87979 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSMarsHabitatPricer;
+			productName = iOSMarsHabitatPricer;
+			productReference = 7CA95A5727611C9D00E87979 /* iOSMarsHabitatPricer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CA95A6627611C9F00E87979 /* iOSMarsHabitatPricerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CA95A7E27611C9F00E87979 /* Build configuration list for PBXNativeTarget "iOSMarsHabitatPricerTests" */;
+			buildPhases = (
+				7CA95A6327611C9F00E87979 /* Sources */,
+				7CA95A6427611C9F00E87979 /* Frameworks */,
+				7CA95A6527611C9F00E87979 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CA95A6927611C9F00E87979 /* PBXTargetDependency */,
+			);
+			name = iOSMarsHabitatPricerTests;
+			productName = iOSMarsHabitatPricerTests;
+			productReference = 7CA95A6727611C9F00E87979 /* iOSMarsHabitatPricerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7CA95A7027611C9F00E87979 /* iOSMarsHabitatPricerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CA95A8127611C9F00E87979 /* Build configuration list for PBXNativeTarget "iOSMarsHabitatPricerUITests" */;
+			buildPhases = (
+				7CA95A6D27611C9F00E87979 /* Sources */,
+				7CA95A6E27611C9F00E87979 /* Frameworks */,
+				7CA95A6F27611C9F00E87979 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CA95A7327611C9F00E87979 /* PBXTargetDependency */,
+			);
+			name = iOSMarsHabitatPricerUITests;
+			productName = iOSMarsHabitatPricerUITests;
+			productReference = 7CA95A7127611C9F00E87979 /* iOSMarsHabitatPricerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CA95A4F27611C9D00E87979 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					7CA95A5627611C9D00E87979 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					7CA95A6627611C9F00E87979 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 7CA95A5627611C9D00E87979;
+					};
+					7CA95A7027611C9F00E87979 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 7CA95A5627611C9D00E87979;
+					};
+				};
+			};
+			buildConfigurationList = 7CA95A5227611C9D00E87979 /* Build configuration list for PBXProject "iOSMarsHabitatPricer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CA95A4E27611C9D00E87979;
+			productRefGroup = 7CA95A5827611C9D00E87979 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CA95A5627611C9D00E87979 /* iOSMarsHabitatPricer */,
+				7CA95A6627611C9F00E87979 /* iOSMarsHabitatPricerTests */,
+				7CA95A7027611C9F00E87979 /* iOSMarsHabitatPricerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CA95A5527611C9D00E87979 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CA95A6227611C9F00E87979 /* Preview Assets.xcassets in Resources */,
+				7CA95A5F27611C9F00E87979 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CA95A6527611C9F00E87979 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CA95A6F27611C9F00E87979 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CA95A5327611C9D00E87979 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CA95A5D27611C9D00E87979 /* HomeView.swift in Sources */,
+				7CA95A5B27611C9D00E87979 /* iOSMarsHabitatPricerApp.swift in Sources */,
+				7CA95A8927611D0300E87979 /* MarsHabitatPricer.mlmodel in Sources */,
+				7CA95A90276120D100E87979 /* MLViewModel.swift in Sources */,
+				7CA95A92276121C400E87979 /* NumberPicker.swift in Sources */,
+				7CA95A942761221500E87979 /* PickerView.swift in Sources */,
+				7CA95A8C27611D7700E87979 /* MarsHabitorPricerModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CA95A6327611C9F00E87979 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CA95A6C27611C9F00E87979 /* iOSMarsHabitatPricerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CA95A6D27611C9F00E87979 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CA95A7827611C9F00E87979 /* iOSMarsHabitatPricerUITestsLaunchTests.swift in Sources */,
+				7CA95A7627611C9F00E87979 /* iOSMarsHabitatPricerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CA95A6927611C9F00E87979 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CA95A5627611C9D00E87979 /* iOSMarsHabitatPricer */;
+			targetProxy = 7CA95A6827611C9F00E87979 /* PBXContainerItemProxy */;
+		};
+		7CA95A7327611C9F00E87979 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CA95A5627611C9D00E87979 /* iOSMarsHabitatPricer */;
+			targetProxy = 7CA95A7227611C9F00E87979 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7CA95A7927611C9F00E87979 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7CA95A7A27611C9F00E87979 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CA95A7C27611C9F00E87979 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSMarsHabitatPricer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jiwon.iOSMarsHabitatPricer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7CA95A7D27611C9F00E87979 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSMarsHabitatPricer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jiwon.iOSMarsHabitatPricer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7CA95A7F27611C9F00E87979 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jiwon.iOSMarsHabitatPricerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSMarsHabitatPricer.app/iOSMarsHabitatPricer";
+			};
+			name = Debug;
+		};
+		7CA95A8027611C9F00E87979 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jiwon.iOSMarsHabitatPricerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSMarsHabitatPricer.app/iOSMarsHabitatPricer";
+			};
+			name = Release;
+		};
+		7CA95A8227611C9F00E87979 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jiwon.iOSMarsHabitatPricerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSMarsHabitatPricer;
+			};
+			name = Debug;
+		};
+		7CA95A8327611C9F00E87979 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jiwon.iOSMarsHabitatPricerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSMarsHabitatPricer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CA95A5227611C9D00E87979 /* Build configuration list for PBXProject "iOSMarsHabitatPricer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CA95A7927611C9F00E87979 /* Debug */,
+				7CA95A7A27611C9F00E87979 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CA95A7B27611C9F00E87979 /* Build configuration list for PBXNativeTarget "iOSMarsHabitatPricer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CA95A7C27611C9F00E87979 /* Debug */,
+				7CA95A7D27611C9F00E87979 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CA95A7E27611C9F00E87979 /* Build configuration list for PBXNativeTarget "iOSMarsHabitatPricerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CA95A7F27611C9F00E87979 /* Debug */,
+				7CA95A8027611C9F00E87979 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CA95A8127611C9F00E87979 /* Build configuration list for PBXNativeTarget "iOSMarsHabitatPricerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CA95A8227611C9F00E87979 /* Debug */,
+				7CA95A8327611C9F00E87979 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CA95A4F27611C9D00E87979 /* Project object */;
+}
