@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct NumberPicker: View {
+    var title : String
+    var numList : [Double]
+    var target : Double
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct NumberPIcker_Previews: PreviewProvider {
-    static var previews: some View {
-        NumberPicker()
+        VStack{
+            Text(title.uppercased())
+                .bold()
+                .foregroundColor(.blue)
+            
+            Picker(title, selection: $target){
+                ForEach(numList, id: \.self) { num in
+                    Text(String(num)).tag(Double(num))
+                }
+                
+            }
+        }
     }
 }

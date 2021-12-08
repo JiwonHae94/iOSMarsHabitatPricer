@@ -8,13 +8,38 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State var price = 0.0
-    let model = MarsHabitorPricerModel()
+    
+    @EnvironmentObject var model : MLViewModel
     
     var body: some View {
         VStack(alignment: .center){
+            
+            
+            NumberPicker(
+                title: "solar panels",
+                numList: [1.0, 2.0, 3.0, 4.0, 5.0],
+                target: model.solarPanels)
+            
+            NumberPicker(
+                title: "green house",
+                numList: [1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0],
+                target: model.greenhouses)
+            
+            
+            NumberPicker(
+                title: "sizes",
+                numList: [750.0,
+                          1000.0,
+                          1500.0,
+                          2000.0,
+                          3000.0,
+                          4000.0,
+                          5000.0,
+                          10000.0],
+                target: model.size)
+            
             Button {
-                price = model.makePrediction(solarPanels: 1.0, greenhouses: 1.0, size: 1.0)
+                model.updatePredictedPrice()
 
             } label: {
                 ZStack(){
@@ -31,7 +56,7 @@ struct HomeView: View {
                 .padding()
             }
             
-            Text("Price is $\(String(price))")
+            Text("Price is $\(String(model.price))")
                 .foregroundColor(.blue)
         }
         
