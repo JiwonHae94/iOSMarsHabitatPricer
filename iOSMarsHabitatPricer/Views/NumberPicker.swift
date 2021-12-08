@@ -10,15 +10,23 @@ import SwiftUI
 struct NumberPicker: View {
     var title : String
     var numList : [Double]
-    var target : Double
+    var target : Binding<Double>
     
     var body: some View {
         VStack{
-            Text(title.uppercased())
-                .bold()
-                .foregroundColor(.blue)
+            ZStack{
+                Rectangle()
+                    .foregroundColor(.blue)
+                    .cornerRadius(10)
+                    .frame(height: 50)
+                
+                Text(title.uppercased())
+                    .bold()
+                    .foregroundColor(.white)
+            }
+            .padding()
             
-            Picker(title, selection: $target){
+            Picker(title, selection: target){
                 ForEach(numList, id: \.self) { num in
                     Text(String(num)).tag(Double(num))
                 }

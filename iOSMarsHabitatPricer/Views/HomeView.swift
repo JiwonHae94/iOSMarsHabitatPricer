@@ -13,17 +13,15 @@ struct HomeView: View {
     
     var body: some View {
         VStack(alignment: .center){
-            
-            
             NumberPicker(
                 title: "solar panels",
                 numList: [1.0, 2.0, 3.0, 4.0, 5.0],
-                target: model.solarPanels)
+                target: $model.solarPanels)
             
             NumberPicker(
                 title: "green house",
                 numList: [1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0],
-                target: model.greenhouses)
+                target: $model.greenhouses)
             
             
             NumberPicker(
@@ -36,7 +34,7 @@ struct HomeView: View {
                           4000.0,
                           5000.0,
                           10000.0],
-                target: model.size)
+                target: $model.size)
             
             Button {
                 model.updatePredictedPrice()
@@ -45,7 +43,7 @@ struct HomeView: View {
                 ZStack(){
                     Rectangle()
                         .frame(height: 48)
-                        .foregroundColor(.blue)
+                        .foregroundColor(.green)
                         .cornerRadius(5)
                     
                     Text("Run Model")
@@ -56,11 +54,13 @@ struct HomeView: View {
                 .padding()
             }
             
-            Text("Price is $\(String(model.price))")
+            Text("Price is \(Helper.formatToCurrency(num: model.price))")
                 .foregroundColor(.blue)
         }
+        .ignoresSafeArea(.all, edges: .top)
         
     }
+        
 }
 
 struct ContentView_Previews: PreviewProvider {
